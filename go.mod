@@ -1,11 +1,11 @@
-module github.com/chaosblade-io/chaosblade-operator
+module github.com/lomoonmoonbird/chaosblade-operator
 
 go 1.20
 
 require (
-	github.com/chaosblade-io/chaosblade-exec-cri v1.7.3
-	github.com/chaosblade-io/chaosblade-exec-os v1.7.3
-	github.com/chaosblade-io/chaosblade-spec-go v1.7.3
+	github.com/lomoonmoonbird/chaosblade-exec-cri v1.7.3
+	github.com/lomoonmoonbird/chaosblade-exec-os v1.7.3
+	github.com/lomoonmoonbird/chaosblade-spec-go v1.7.3
 	github.com/ethercflow/hookfs v0.3.0
 	github.com/go-openapi/spec v0.19.4
 	github.com/hanwen/go-fuse v1.0.0
