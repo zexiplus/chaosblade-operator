@@ -27,9 +27,9 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBlade":       schema_pkg_apis_chaosblade_v1alpha1_ChaosBlade(ref),
-		"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeSpec":   schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeSpec(ref),
-		"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeStatus": schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeStatus(ref),
+		"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBlade":       schema_pkg_apis_chaosblade_v1alpha1_ChaosBlade(ref),
+		"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeSpec":   schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeSpec(ref),
+		"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeStatus": schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeStatus(ref),
 	}
 }
 
@@ -60,19 +60,19 @@ func schema_pkg_apis_chaosblade_v1alpha1_ChaosBlade(ref common.ReferenceCallback
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeSpec"),
+							Ref: ref("github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeStatus"),
+							Ref: ref("github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeSpec", "github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeSpec", "github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ChaosBladeStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -89,7 +89,7 @@ func schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeSpec(ref common.ReferenceCall
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentSpec"),
+										Ref: ref("github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentSpec"),
 									},
 								},
 							},
@@ -100,7 +100,7 @@ func schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeSpec(ref common.ReferenceCall
 			},
 		},
 		Dependencies: []string{
-			"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentSpec"},
+			"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentSpec"},
 	}
 }
 
@@ -124,7 +124,7 @@ func schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeStatus(ref common.ReferenceCa
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentStatus"),
+										Ref: ref("github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentStatus"),
 									},
 								},
 							},
@@ -135,6 +135,6 @@ func schema_pkg_apis_chaosblade_v1alpha1_ChaosBladeStatus(ref common.ReferenceCa
 			},
 		},
 		Dependencies: []string{
-			"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentStatus"},
+			"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1.ExperimentStatus"},
 	}
 }

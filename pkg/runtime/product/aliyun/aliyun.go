@@ -21,7 +21,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/chaosblade-io/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/lomoonmoonbird/chaosblade-operator/pkg/runtime/chaosblade"
 )
 
 var (

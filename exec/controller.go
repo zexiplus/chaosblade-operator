@@ -22,14 +22,14 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/chaosblade-io/chaosblade-spec-go/spec"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/exec/container"
-	"github.com/chaosblade-io/chaosblade-operator/exec/model"
-	"github.com/chaosblade-io/chaosblade-operator/exec/node"
-	"github.com/chaosblade-io/chaosblade-operator/exec/pod"
-	"github.com/chaosblade-io/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	"github.com/lomoonmoonbird/chaosblade-operator/channel"
+	"github.com/lomoonmoonbird/chaosblade-operator/exec/container"
+	"github.com/lomoonmoonbird/chaosblade-operator/exec/model"
+	"github.com/lomoonmoonbird/chaosblade-operator/exec/node"
+	"github.com/lomoonmoonbird/chaosblade-operator/exec/pod"
+	"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
 )
 
 // ResourceDispatchedController contains all resource controllers exclude node resource

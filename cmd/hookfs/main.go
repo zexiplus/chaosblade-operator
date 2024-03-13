@@ -25,12 +25,12 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/chaosblade-io/chaosblade-spec-go/util"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
 	"github.com/ethercflow/hookfs/hookfs"
 	"github.com/sirupsen/logrus"
 	"sigs.k8s.io/controller-runtime/pkg/runtime/signals"
 
-	chaosbladehook "github.com/chaosblade-io/chaosblade-operator/pkg/hookfs"
+	chaosbladehook "github.com/lomoonmoonbird/chaosblade-operator/pkg/hookfs"
 )
 
 var (

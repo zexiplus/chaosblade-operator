@@ -28,11 +28,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/chaosblade-io/chaosblade-spec-go/spec"
-	"github.com/chaosblade-io/chaosblade-spec-go/util"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
 	"github.com/sirupsen/logrus"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
+	"github.com/lomoonmoonbird/chaosblade-operator/channel"
 )
 
 type CopyOptions struct {

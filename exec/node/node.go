@@ -18,22 +18,22 @@ package node
 
 import (
 	"fmt"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/cpu"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/disk"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/file"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/mem"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/network"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/network/tc"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/process"
-	"github.com/chaosblade-io/chaosblade-exec-os/exec/script"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/cpu"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/disk"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/file"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/mem"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/network"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/network/tc"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/process"
+	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/script"
 	"strings"
 
-	"github.com/chaosblade-io/chaosblade-spec-go/spec"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
 
-	"github.com/chaosblade-io/chaosblade-operator/channel"
-	"github.com/chaosblade-io/chaosblade-operator/exec/model"
+	"github.com/lomoonmoonbird/chaosblade-operator/channel"
+	"github.com/lomoonmoonbird/chaosblade-operator/exec/model"
 
-	osModel "github.com/chaosblade-io/chaosblade-exec-os/exec/model"
+	osModel "github.com/lomoonmoonbird/chaosblade-exec-os/exec/model"
 )
 
 type ResourceModelSpec struct {

@@ -23,7 +23,7 @@ BUILD_IMAGE_PATH=build/image/blade
 OS_YAML_FILE_NAME=chaosblade-k8s-spec-$(BLADE_VERSION).yaml
 OS_YAML_FILE_PATH=$(BUILD_TARGET_YAML)/$(OS_YAML_FILE_NAME)
 
-VERSION_PKG=github.com/chaosblade-io/chaosblade-operator/version
+VERSION_PKG=github.com/lomoonmoonbird/chaosblade-operator/version
 GO_X_FLAGS=-X=$(VERSION_PKG).CombinedVersion=$(BLADE_VERSION),$(BLADE_VENDOR)
 GO_FLAGS=-ldflags $(GO_X_FLAGS)
 
@@ -37,40 +37,40 @@ build_all: pre_build build docker-build
 
 docker-build:
 	GOOS="linux" GOARCH="amd64" go build $(GO_FLAGS) -o build/_output/bin/chaosblade-operator cmd/manager/main.go
-	docker buildx build -f build/image/amd/Dockerfile --platform=linux/amd64 -t ghcr.io/chaosblade-io/chaosblade-operator:${BLADE_VERSION} .
+	docker buildx build -f build/image/amd/Dockerfile --platform=linux/amd64 -t ghcr.io/lomoonmoonbird/chaosblade-operator:${BLADE_VERSION} .
 
 docker-build-arm64:
 	GOOS="linux" GOARCH="arm64" go build $(GO_FLAGS) -o build/_output/bin/chaosblade-operator cmd/manager/main.go
-	docker buildx build -f build/image/arm/Dockerfile  --platform=linux/arm64  -t ghcr.io/chaosblade-io/chaosblade-operator-arm64:${BLADE_VERSION} .
+	docker buildx build -f build/image/arm/Dockerfile  --platform=linux/arm64  -t ghcr.io/lomoonmoonbird/chaosblade-operator-arm64:${BLADE_VERSION} .
 
 push_image:
-	docker push ghcr.io/chaosblade-io/chaosblade-operator:${BLADE_VERSION}
-	docker push ghcr.io/chaosblade-io/chaosblade-operator-arm64:${BLADE_VERSION}
+	docker push ghcr.io/lomoonmoonbird/chaosblade-operator:${BLADE_VERSION}
+	docker push ghcr.io/lomoonmoonbird/chaosblade-operator-arm64:${BLADE_VERSION}
 
 #operator-sdk 0.19.0 build
 build_all_operator: pre_build build build_image
 build_image:
-	operator-sdk build --go-build-args="$(GO_FLAGS)" ghcr.io/chaosblade-io/chaosblade-operator:${BLADE_VERSION}
+	operator-sdk build --go-build-args="$(GO_FLAGS)" ghcr.io/lomoonmoonbird/chaosblade-operator:${BLADE_VERSION}
 
 build_image_arm64:
-	GOOS="linux" GOARCH="arm64" operator-sdk build --go-build-args="$(GO_FLAGS)" ghcr.io/chaosblade-io/chaosblade-operator-arm64:${BLADE_VERSION}
+	GOOS="linux" GOARCH="arm64" operator-sdk build --go-build-args="$(GO_FLAGS)" ghcr.io/lomoonmoonbird/chaosblade-operator-arm64:${BLADE_VERSION}
 
 # only build_fuse and yaml
 build_linux:
 	docker build -f build/musl/Dockerfile -t chaosblade-operator-build-musl:latest build/musl
 	docker run --rm \
 		-v $(shell echo -n ${GOPATH}):/go \
-		-v $(shell pwd):/go/src/github.com/chaosblade-io/chaosblade-operator \
-		-w /go/src/github.com/chaosblade-io/chaosblade-operator \
+		-v $(shell pwd):/go/src/github.com/lomoonmoonbird/chaosblade-operator \
+		-w /go/src/github.com/lomoonmoonbird/chaosblade-operator \
 		chaosblade-operator-build-musl:latest
 
 build_arm64:
 	docker run --rm --privileged multiarch/qemu-user-static:register --reset
 	docker run --rm \
 		-v $(shell echo -n ${GOPATH}):/go \
-		-v $(shell pwd):/go/src/github.com/chaosblade-io/chaosblade-operator \
-		-w /go/src/github.com/chaosblade-io/chaosblade-operator \
-		chaosblade-io/chaosblade-build-arm:latest
+		-v $(shell pwd):/go/src/github.com/lomoonmoonbird/chaosblade-operator \
+		-w /go/src/github.com/lomoonmoonbird/chaosblade-operator \
+		lomoonmoonbird/chaosblade-build-arm:latest
 
 pre_build:
 	mkdir -p $(BUILD_TARGET_BIN) $(BUILD_TARGET_YAML)
