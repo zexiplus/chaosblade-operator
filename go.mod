@@ -123,16 +123,13 @@ require (
 replace k8s.io/client-go => k8s.io/client-go v0.20.6 // Required by prometheus-operator
 
 replace (
-	github.com/lomoonmoonbird/chaosblade-spec-go => ../chaosblade-spec-go
-	github.com/lomoonmoonbird/chaosblade-spec-go v1.8.5 => ../chaosblade-spec-go
+	github.com/lomoonmoonbird/chaosblade-spec-go => /home/chaosblade/chaosblade-spec-go
 )
 
 replace (
-	github.com/lomoonmoonbird/chaosblade-exec-os => ../chaosblade-exec-os
-	github.com/lomoonmoonbird/chaosblade-exec-os v1.8.5 => ../chaosblade-exec-os
+	github.com/lomoonmoonbird/chaosblade-exec-os => /home/chaosblade/chaosblade-exec-os
 )
 
 replace (
-	github.com/lomoonmoonbird/chaosblade-exec-cri => ../chaosblade-exec-cri
-	github.com/lomoonmoonbird/chaosblade-exec-cri v1.8.5 => ../chaosblade-exec-cri
+	github.com/lomoonmoonbird/chaosblade-exec-cri => /home/chaosblade/chaosblade-exec-cri
 )
