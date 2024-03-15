@@ -3,12 +3,12 @@ module github.com/lomoonmoonbird/chaosblade-operator
 go 1.20
 
 require (
-	github.com/lomoonmoonbird/chaosblade-exec-cri master
-	github.com/lomoonmoonbird/chaosblade-exec-os master
-	github.com/lomoonmoonbird/chaosblade-spec-go master
 	github.com/ethercflow/hookfs v0.3.0
 	github.com/go-openapi/spec v0.19.4
 	github.com/hanwen/go-fuse v1.0.0
+	github.com/lomoonmoonbird/chaosblade-exec-cri v1.8.5
+	github.com/lomoonmoonbird/chaosblade-exec-os v1.8.5
+	github.com/lomoonmoonbird/chaosblade-spec-go v1.8.5
 	github.com/operator-framework/operator-sdk v0.17.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/pflag v1.0.5
@@ -121,3 +121,18 @@ require (
 )
 
 replace k8s.io/client-go => k8s.io/client-go v0.20.6 // Required by prometheus-operator
+
+replace (
+	github.com/lomoonmoonbird/chaosblade-spec-go => ../chaosblade-spec-go
+	github.com/lomoonmoonbird/chaosblade-spec-go v1.8.5 => ../chaosblade-spec-go
+)
+
+replace (
+	github.com/lomoonmoonbird/chaosblade-exec-os => ../chaosblade-exec-os
+	github.com/lomoonmoonbird/chaosblade-exec-os v1.8.5 => ../chaosblade-exec-os
+)
+
+replace (
+	github.com/lomoonmoonbird/chaosblade-exec-cri => ../chaosblade-exec-cri
+	github.com/lomoonmoonbird/chaosblade-exec-cri v1.8.5 => ../chaosblade-exec-cri
+)
