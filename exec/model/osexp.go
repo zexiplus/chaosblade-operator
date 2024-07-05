@@ -17,14 +17,14 @@
 package model
 
 import (
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/cpu"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/disk"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/file"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/mem"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/network"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/process"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/script"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-exec-os/exec/cpu"
+	"github.com/zexiplus/chaosblade-exec-os/exec/disk"
+	"github.com/zexiplus/chaosblade-exec-os/exec/file"
+	"github.com/zexiplus/chaosblade-exec-os/exec/mem"
+	"github.com/zexiplus/chaosblade-exec-os/exec/network"
+	"github.com/zexiplus/chaosblade-exec-os/exec/process"
+	"github.com/zexiplus/chaosblade-exec-os/exec/script"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 )
 
 type OSSubResourceModelSpec struct {

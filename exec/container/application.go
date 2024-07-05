@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 	"github.com/sirupsen/logrus"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/runtime/chaosblade"
-	"github.com/lomoonmoonbird/chaosblade-operator/version"
+	"github.com/zexiplus/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/zexiplus/chaosblade-operator/version"
 )
 
 var JvmSpecFileForYaml = ""

@@ -19,7 +19,7 @@ package chaosblade
 import (
 	"github.com/spf13/pflag"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/version"
+	"github.com/zexiplus/chaosblade-operator/version"
 )
 
 var (

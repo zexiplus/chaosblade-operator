@@ -20,12 +20,12 @@ import (
 	"log"
 	"os"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/container"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/node"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/pod"
+	"github.com/zexiplus/chaosblade-operator/exec/container"
+	"github.com/zexiplus/chaosblade-operator/exec/node"
+	"github.com/zexiplus/chaosblade-operator/exec/pod"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 )
 
 // main creates the yaml file of the experiments about kubernetes

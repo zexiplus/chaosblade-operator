@@ -23,16 +23,16 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 	"github.com/sirupsen/logrus"
 	"k8s.io/api/core/v1"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/model"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	"github.com/zexiplus/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/exec/model"
+	"github.com/zexiplus/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
 )
 
 type ExpController struct {

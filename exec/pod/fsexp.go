@@ -22,18 +22,18 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 	"github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/model"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
-	chaosfs "github.com/lomoonmoonbird/chaosblade-operator/pkg/hookfs"
-	webhook "github.com/lomoonmoonbird/chaosblade-operator/pkg/webhook/pod"
+	"github.com/zexiplus/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/exec/model"
+	"github.com/zexiplus/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	chaosfs "github.com/zexiplus/chaosblade-operator/pkg/hookfs"
+	webhook "github.com/zexiplus/chaosblade-operator/pkg/webhook/pod"
 )
 
 type PodIOActionSpec struct {

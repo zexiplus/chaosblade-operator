@@ -17,10 +17,10 @@
 package model
 
 import (
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-exec-cri/exec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/channel"
 )
 
 // ResourceExpModelSpec contains node, pod, container

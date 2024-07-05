@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 	"github.com/sirupsen/logrus"
 )
 

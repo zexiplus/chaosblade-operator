@@ -26,10 +26,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/model"
+	"github.com/zexiplus/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/exec/model"
 )
 
 func (e *ExpController) getMatchedNodeResources(ctx context.Context, expModel spec.ExpModel) ([]v1.Node, *spec.Response) {

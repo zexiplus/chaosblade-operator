@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/channel"
 )
 
 type DeployMode interface {

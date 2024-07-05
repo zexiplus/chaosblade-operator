@@ -17,7 +17,7 @@
 package controller
 
 import (
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/controller/chaosblade"
+	"github.com/zexiplus/chaosblade-operator/pkg/controller/chaosblade"
 )
 
 func init() {

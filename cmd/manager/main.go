@@ -40,14 +40,14 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/runtime/log"
 	"sigs.k8s.io/controller-runtime/pkg/runtime/signals"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/controller"
-	operator "github.com/lomoonmoonbird/chaosblade-operator/pkg/runtime"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/runtime/chaosblade"
-	webhookcfg "github.com/lomoonmoonbird/chaosblade-operator/pkg/webhook"
-	mutator "github.com/lomoonmoonbird/chaosblade-operator/pkg/webhook/pod"
-	"github.com/lomoonmoonbird/chaosblade-operator/version"
+	"github.com/zexiplus/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/pkg/apis"
+	"github.com/zexiplus/chaosblade-operator/pkg/controller"
+	operator "github.com/zexiplus/chaosblade-operator/pkg/runtime"
+	"github.com/zexiplus/chaosblade-operator/pkg/runtime/chaosblade"
+	webhookcfg "github.com/zexiplus/chaosblade-operator/pkg/webhook"
+	mutator "github.com/zexiplus/chaosblade-operator/pkg/webhook/pod"
+	"github.com/zexiplus/chaosblade-operator/version"
 )
 
 func printVersion() {

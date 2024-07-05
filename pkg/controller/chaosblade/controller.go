@@ -34,13 +34,13 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/model"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
-	runtime2 "github.com/lomoonmoonbird/chaosblade-operator/pkg/runtime"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/runtime/chaosblade"
-	"github.com/lomoonmoonbird/chaosblade-operator/version"
+	"github.com/zexiplus/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/exec"
+	"github.com/zexiplus/chaosblade-operator/exec/model"
+	"github.com/zexiplus/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	runtime2 "github.com/zexiplus/chaosblade-operator/pkg/runtime"
+	"github.com/zexiplus/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/zexiplus/chaosblade-operator/version"
 )
 
 const chaosbladeFinalizer = "finalizer.chaosblade.io"

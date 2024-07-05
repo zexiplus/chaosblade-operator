@@ -18,22 +18,22 @@ package node
 
 import (
 	"fmt"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/cpu"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/disk"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/file"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/mem"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/network"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/network/tc"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/process"
-	"github.com/lomoonmoonbird/chaosblade-exec-os/exec/script"
+	"github.com/zexiplus/chaosblade-exec-os/exec/cpu"
+	"github.com/zexiplus/chaosblade-exec-os/exec/disk"
+	"github.com/zexiplus/chaosblade-exec-os/exec/file"
+	"github.com/zexiplus/chaosblade-exec-os/exec/mem"
+	"github.com/zexiplus/chaosblade-exec-os/exec/network"
+	"github.com/zexiplus/chaosblade-exec-os/exec/network/tc"
+	"github.com/zexiplus/chaosblade-exec-os/exec/process"
+	"github.com/zexiplus/chaosblade-exec-os/exec/script"
 	"strings"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
-	"github.com/lomoonmoonbird/chaosblade-operator/exec/model"
+	"github.com/zexiplus/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/exec/model"
 
-	osModel "github.com/lomoonmoonbird/chaosblade-exec-os/exec/model"
+	osModel "github.com/zexiplus/chaosblade-exec-os/exec/model"
 )
 
 type ResourceModelSpec struct {

@@ -27,10 +27,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 	pkglabels "k8s.io/apimachinery/pkg/labels"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/channel"
 )
 
 const DefaultNamespace = "default"

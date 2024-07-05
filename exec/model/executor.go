@@ -26,21 +26,21 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec"
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-exec-cri/exec"
+	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 	"github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"
 	pkglabels "k8s.io/apimachinery/pkg/labels"
 	cli "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/lomoonmoonbird/chaosblade-operator/channel"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
-	"github.com/lomoonmoonbird/chaosblade-operator/pkg/runtime/chaosblade"
+	"github.com/zexiplus/chaosblade-operator/channel"
+	"github.com/zexiplus/chaosblade-operator/pkg/apis/chaosblade/v1alpha1"
+	"github.com/zexiplus/chaosblade-operator/pkg/runtime/chaosblade"
 )
 
 func checkExperimentStatus(ctx context.Context, expModel *spec.ExpModel, statuses []v1alpha1.ResourceStatus, identifiers []ExperimentIdentifierInPod, client *channel.Client) {
