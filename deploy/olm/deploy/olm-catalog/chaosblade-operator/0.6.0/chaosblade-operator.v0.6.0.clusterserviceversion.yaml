@@ -8,7 +8,7 @@ metadata:
     createdAt: 2020-02-11T15:40:00Z
     certified: "false"
     support: chaosblade.io
-    repository: https://github.com/lomoonmoonbird/chaosblade-operator
+    repository: https://github.com/zexiplus/chaosblade-operator
     description: A chaos engineering operator for cloud-native on Kubernetes environments.
     alm-examples: |-
       [
@@ -110,7 +110,7 @@ spec:
     Note: For the following `VERSION`, please use the latest version number instead
 
     ### Helm v2
-    * Download the latest `chaosblade-operator-VERSION-v2.tgz` package at [Release](https://github.com/lomoonmoonbird/chaosblade-operator/releases)
+    * Download the latest `chaosblade-operator-VERSION-v2.tgz` package at [Release](https://github.com/zexiplus/chaosblade-operator/releases)
     * Install using `helm install --namespace kube-system --name chaosblade-operator chaosblade-operator-VERSION-v2.tgz`
     * Use `kubectl get pod -l part-of=chaosblade -n kube-system` to check the installation status of the Pod. If both are running, the installation was successful
     * Use the following command to uninstall, pay attention to the execution order:
@@ -119,7 +119,7 @@ spec:
     helm del --purge chaosblade-operator
     ```
     ### Helm v3
-    * Download the latest `chaosblade-operator-VERSION-v3.tgz` package at [Release](https://github.com/lomoonmoonbird/chaosblade-operator/releases)
+    * Download the latest `chaosblade-operator-VERSION-v3.tgz` package at [Release](https://github.com/zexiplus/chaosblade-operator/releases)
     * Use `helm install chaosblade-operator chaosblade-operator-VERSION-v3.tgz --namespace kube-system` command to install
     * Use `kubectl get pod -l part-of=chaosblade -n kube-system` to check the installation status of the Pod. If both are running, the installation was successful
     * Use the following command to uninstall, pay attention to the execution order:
@@ -128,7 +128,7 @@ spec:
     helm uninstall chaosblade-operator -n kube-system
     ```
     ### Kubectl
-    * Download the latest `chaosblade-operator-yaml-VERSION.tar.gz` package at [Release](https://github.com/lomoonmoonbird/chaosblade-operator/releases)
+    * Download the latest `chaosblade-operator-yaml-VERSION.tar.gz` package at [Release](https://github.com/zexiplus/chaosblade-operator/releases)
     * After decompression, execute `kubectl apply -f chaosblade-operator-yaml-VERSION/` installation
     * Use `kubectl get pod -l part-of=chaosblade -n kube-system` to check the installation status of the Pod. If both are running, the installation was successful
     * Use the following command to uninstall, pay attention to the execution order:
@@ -221,7 +221,7 @@ spec:
     ```
     kubectl delete blade loss-node-network-by-names
     ```
-    You can also edit the yaml file to update the content of the experiment and the chaosblade operator will complete the update of the experiment. See more examples: [Examples](https://github.com/lomoonmoonbird/chaosblade-operator/tree/master/examples)
+    You can also edit the yaml file to update the content of the experiment and the chaosblade operator will complete the update of the experiment. See more examples: [Examples](https://github.com/zexiplus/chaosblade-operator/tree/master/examples)
 
     ### Execute with chaosblade cli tool
     ```
@@ -260,16 +260,16 @@ spec:
     ```
     blade destroy e647064f5f20953c
     ```
-    In addition to the above two methods, you can also use the kubernetes client-go api for execution. For details, please refer to: [executor.go](https://github.com/lomoonmoonbird/chaosblade/blob/master/exec/kubernetes/executor.go) code implementation.
+    In addition to the above two methods, you can also use the kubernetes client-go api for execution. For details, please refer to: [executor.go](https://github.com/zexiplus/chaosblade/blob/master/exec/kubernetes/executor.go) code implementation.
 
-    [Chinese documentation](https://lomoonmoonbird.gitbook.io/chaosblade-help-zh-cn/blade-create-k8s)
+    [Chinese documentation](https://zexiplus.gitbook.io/chaosblade-help-zh-cn/blade-create-k8s)
 
     ## Questions & Suggestions
-    If you encounter problems during installation and use, or suggestions and new features, all projects (including other projects) can be submitted to [Github Issues](https://github.com/lomoonmoonbird/chaosblade/issues)
+    If you encounter problems during installation and use, or suggestions and new features, all projects (including other projects) can be submitted to [Github Issues](https://github.com/zexiplus/chaosblade/issues)
 
     You can also contact us via:
     * Dingding group: 23177705
-    * Gitter room: [chaosblade community](https://gitter.im/lomoonmoonbird/community)
+    * Gitter room: [chaosblade community](https://gitter.im/zexiplus/community)
     * Email: chaosblade.io.01@gmail.com
     * Twitter: [chaosblade.io](https://twitter.com/ChaosbladeI)
 
@@ -392,21 +392,21 @@ spec:
       operated-by: chaosblade-operator
   links:
     - name: ChaosBlade
-      url: https://github.com/lomoonmoonbird
+      url: https://github.com/zexiplus
     - name: Chaosblade CLI
-      url: https://github.com/lomoonmoonbird/chaosblade
+      url: https://github.com/zexiplus/chaosblade
     - name: Chaosblade for Basic Resource
-      url: https://github.com/lomoonmoonbird/chaosblade-exec-os
+      url: https://github.com/zexiplus/chaosblade-exec-os
     - name: Chaosblade for Docker
-      url: https://github.com/lomoonmoonbird/chaosblade-exec-docker
+      url: https://github.com/zexiplus/chaosblade-exec-docker
     - name: Chaosblade for Java
-      url: https://github.com/lomoonmoonbird/chaosblade-exec-jvm
+      url: https://github.com/zexiplus/chaosblade-exec-jvm
     - name: Chaosblade for C++
-      url: https://github.com/lomoonmoonbird/chaosblade-exec-cplus
+      url: https://github.com/zexiplus/chaosblade-exec-cplus
     - name: Chaosblade for Kubernetes
-      url: https://github.com/lomoonmoonbird/chaosblade-operator
+      url: https://github.com/zexiplus/chaosblade-operator
     - name: Documentation(Chinese)
-      url: https://lomoonmoonbird.gitbook.io/chaosblade-help-zh-cn
+      url: https://zexiplus.gitbook.io/chaosblade-help-zh-cn
   maintainers:
     - email: chaosblade.io.01@gmail.com
       name: ChaosBlade Community

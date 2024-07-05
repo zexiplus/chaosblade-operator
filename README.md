@@ -1,5 +1,5 @@
 # Chaosblade-operator: A Chaos Engineering Tool for Cloud-native 
-![license](https://img.shields.io/github/license/lomoonmoonbird/chaosblade.svg)
+![license](https://img.shields.io/github/license/zexiplus/chaosblade.svg)
 
 中文版 [README](README_CN.md)
 ## Introduction
@@ -35,7 +35,7 @@ The lowest version of kubernetes supported is 1.12. Chaosblade operator can be i
 Note: For the following `VERSION`, please use the latest version number instead
 
 ### Helm v2
-* Download the latest `chaosblade-operator-VERSION-v2.tgz` package at [Release](https://github.com/lomoonmoonbird/chaosblade-operator/releases)
+* Download the latest `chaosblade-operator-VERSION-v2.tgz` package at [Release](https://github.com/zexiplus/chaosblade-operator/releases)
 * Install using `helm install --namespace chaosblade --name chaosblade-operator chaosblade-operator-VERSION-v2.tgz`
 * Use `kubectl get pod -l part-of=chaosblade -n chaosblade` to check the installation status of the Pod. If both are running, the installation was successful
 * Use the following command to uninstall, pay attention to the execution order:
@@ -44,7 +44,7 @@ kubectl delete crd chaosblades.chaosblade.io
 helm del --purge chaosblade-operator
 ```
 ### Helm v3
-* Download the latest `chaosblade-operator-VERSION-v3.tgz` package at [Release](https://github.com/lomoonmoonbird/chaosblade-operator/releases)
+* Download the latest `chaosblade-operator-VERSION-v3.tgz` package at [Release](https://github.com/zexiplus/chaosblade-operator/releases)
 * Use `helm install chaosblade-operator chaosblade-operator-VERSION-v3.tgz --namespace chaosblade` command to install
 * Use `kubectl get pod -l part-of=chaosblade -n chaosblade` to check the installation status of the Pod. If both are running, the installation was successful
 * Use the following command to uninstall, pay attention to the execution order:
@@ -53,7 +53,7 @@ kubectl delete crd chaosblades.chaosblade.io
 helm uninstall chaosblade-operator -n chaosblade
 ```
 ### Kubectl
-* Download the latest `chaosblade-operator-yaml-VERSION.tar.gz` package at [Release](https://github.com/lomoonmoonbird/chaosblade-operator/releases)
+* Download the latest `chaosblade-operator-yaml-VERSION.tar.gz` package at [Release](https://github.com/zexiplus/chaosblade-operator/releases)
 * After decompression, execute `kubectl apply -f chaosblade-operator-yaml-VERSION/` installation
 * Use `kubectl get pod -l part-of=chaosblade -n chaosblade` to check the installation status of the Pod. If both are running, the installation was successful
 * Use the following command to uninstall, pay attention to the execution order:
@@ -146,7 +146,7 @@ Or delete this blade resource directly:
 ```
 kubectl delete blade loss-node-network-by-names
 ```
-You can also edit the yaml file to update the content of the experiment and the chaosblade operator will complete the update of the experiment. See more examples: [Examples](https://github.com/lomoonmoonbird/chaosblade-operator/tree/master/examples)
+You can also edit the yaml file to update the content of the experiment and the chaosblade operator will complete the update of the experiment. See more examples: [Examples](https://github.com/zexiplus/chaosblade-operator/tree/master/examples)
 
 ### Execute with chaosblade cli tool
 ```
@@ -185,16 +185,16 @@ Destroy experiment:
 ```
 blade destroy e647064f5f20953c
 ```
-In addition to the above two methods, you can also use the kubernetes client-go api for execution. For details, please refer to: [executor.go](https://github.com/lomoonmoonbird/chaosblade/blob/master/exec/kubernetes/executor.go) code implementation.
+In addition to the above two methods, you can also use the kubernetes client-go api for execution. For details, please refer to: [executor.go](https://github.com/zexiplus/chaosblade/blob/master/exec/kubernetes/executor.go) code implementation.
 
-[Chinese documentation](https://lomoonmoonbird.gitbook.io/chaosblade-help-zh-cn/blade-create-k8s)
+[Chinese documentation](https://zexiplus.gitbook.io/chaosblade-help-zh-cn/blade-create-k8s)
 
 ## Questions & Suggestions
-If you encounter problems during installation and use, or suggestions and new features, all projects (including other projects) can be submitted to [Github Issues](https://github.com/lomoonmoonbird/chaosblade/issues)
+If you encounter problems during installation and use, or suggestions and new features, all projects (including other projects) can be submitted to [Github Issues](https://github.com/zexiplus/chaosblade/issues)
 
 You can also contact us via:
 * Dingding group: 23177705
-* Gitter room: [chaosblade community](https://gitter.im/lomoonmoonbird/community)
+* Gitter room: [chaosblade community](https://gitter.im/zexiplus/community)
 * Email: chaosblade.io.01@gmail.com
 * Twitter: [chaosblade.io](https://twitter.com/ChaosbladeI)
 

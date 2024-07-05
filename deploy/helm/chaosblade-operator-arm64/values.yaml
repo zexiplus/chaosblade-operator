@@ -2,7 +2,7 @@
 
 # chaosblade-operator
 operator:
-  repository: ghcr.io/lomoonmoonbird/chaosblade-operator-arm64
+  repository: ghcr.io/zexiplus/chaosblade-operator-arm64
   version: 1.7.3
   # image.pullPolicy: must be Always|IfNotPresent|Never
   pullPolicy: IfNotPresent
@@ -11,7 +11,7 @@ operator:
   reconcileCount: 20
 
 blade:
-  repository: ghcr.io/lomoonmoonbird/chaosblade-tool-arm64
+  repository: ghcr.io/zexiplus/chaosblade-tool-arm64
   version: 1.7.3
   pullPolicy: IfNotPresent
   downloadUrl: ""
